@@ -1,4 +1,161 @@
 .header{
-  background: #69F0AE;
-  font-size: 64px;
+    position: relative;
+}
+.logoSearch{
+    height: 55px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+
+    @media (max-width: 768px) {
+        height: 40px;
+        justify-content: space-between;
+
+    }
+
+    img{
+        width: 53px;
+        height: 53px;
+        margin-right: 16px;
+        
+        @media (max-width: 768px) {
+            width: 40px;
+            height: 40px;
+            margin-right: 0;
+        }
+    }
+    h1{
+        display: flex;
+        
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+    .logoText{
+        font-size: $h1-font-size;
+        height: 55px;
+        line-height: 55px;
+        margin: 0;
+        
+        @media (max-width: 768px) {
+            display: none;
+        }
+
+        span{
+            font-family: $font-family-third;
+            font-size: $font-size-base;
+            font-weight: bold;
+            margin-left: 4px;
+
+            @media (max-width: 768px) {
+                display: none;
+            }
+        }
+    }
+    .search{
+        width: 335px;
+        height: 55px;
+
+        @media (max-width: 768px) {
+            width: 207px;
+            height: 39px;
+        }
+        input{
+            width: 284px;
+            height: 55px;
+            color: #878787;
+            border: 2px solid $primary;
+            border-right: 0;
+            padding: 16px 0px 16px 24px;
+
+            @media (max-width: 768px) {
+                width: 168px;
+                height: 39px;
+            }
+        }
+        input:focus{
+            width: 284px;
+            height: 55px;
+            color: #878787;
+            border-top: 2px solid $primary;
+            border-left: 2px solid $primary;
+            border-bottom: 2px solid $primary;
+            padding: 16px 0px 16px 24px;
+
+            @media (max-width: 768px) {
+                width: 168px;
+                height: 39px;
+            }
+        }
+        button{
+            background: $primary;
+            width: 51px;
+
+            @media (max-width: 768px) {
+                width: 39px;
+                height: 39px;
+            }
+
+            .searchIcon{
+                color: $secondary;
+            }
+        }
+        button:hover{
+            background: $gray-900;
+        }
+    } 
+    
+}
+.material-symbols-outlined {
+    font-size: 30px;
+}
+.login-web{
+    display: block;
+    display: flex;
+    margin-left: auto;
+
+    ul{
+        margin: 0;
+
+        li{
+            font-size: $font-size-sm;
+        }
+    
+    }
+    
+    @media (max-width: 992px) {
+        display: none;
+        
+        li{
+            display: none;
+        }
+
+        
+    }
+
+}
+.login-pad{
+    display: none;
+
+    @media (max-width: 992px) {
+        display: block;
+        margin-left: auto;
+
+        li{
+            font-size: $font-size-sm;
+        }
+    }
+    @media (max-width: 768px) {
+        margin-left: 0;
+    }
+
+    .menuShow{
+        position: absolute;
+        z-index: 100;
+        top: 106px;
+        left: 0;
+        right: 0;
+        background: $bg-color;
+    }
 }

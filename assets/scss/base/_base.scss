@@ -1,0 +1,37 @@
+// 字體
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Serif+TC:wght@700&family=Yeseva+One&display=swap');
+// icon
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0");
+
+*,*:before, *:after{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+    background: $bg-color;
+    display: block;
+}
+a{
+    text-decoration: none;
+    display: block;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+.font-second{
+    font-family: $font-family-second;
+}
+.font-third{
+    font-family: $font-family-third;
+}
+.borderTop{
+    border-top: 3px solid $primary;
+}
+.borderUnder{
+    border-bottom: 3px solid $primary;
+}

@@ -1,0 +1,57 @@
+// 4px一單位
+.my-md-6{
+    margin: 24px 0;
+}
+.me-md-1{
+    margin-right: 4px;
+}
+.me-md-4{
+    margin-right: 16px;
+}
+.me-md-12{
+    margin-right: 48px;
+}
+.ms-md-6{
+    margin-left: 24px;
+}
+.px-12 {
+    padding-right: 12px;
+    padding-left: 12px;
+}
+.py-md-8{
+    padding: 32px 0;
+}
+.pe-md-6{
+    padding-right: 24px;
+}
+.pb-md-8{
+    padding-bottom: 32px;
+}
+// mobile
+@media (max-width: 768px) {
+    // bootstrap原有.my-sm-3 !important的設定，所以另外設定別的名稱
+    .i-my-sm-3{
+        margin: 12px 0;
+    }
+    .ms-sm-0{
+        margin-left: 0;
+    }
+    
+}
+
+// 尺寸
+.w-30{
+    width: 30px;
+}
+.h-30{
+    height: 30px;
+}
+.w-54{
+    width: 54px;
+}
+.h-38{
+    height: 38px;
+}
+.h-100{
+    height: 100%;
+}

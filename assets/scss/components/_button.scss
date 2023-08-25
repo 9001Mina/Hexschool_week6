@@ -1,0 +1,12 @@
+.btnStyle{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: none;
+    border-radius: 0;
+}
+.accordion-button:focus{
+    z-index: 0;
+    border: 0;
+    box-shadow: none;
+}

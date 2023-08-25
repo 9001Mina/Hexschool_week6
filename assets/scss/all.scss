@@ -1,5 +1,17 @@
 @import "../../node_modules/bootstrap/scss/functions";
 @import './utils/variables';
+@import "../../node_modules/bootstrap";
+
+@import './variables';
+@import './base/base';
+@import './utils/universal';
+
+@import './components/badges';
+@import './components/button';
+@import './components/card';
+@import './components/from';
+@import './components/pagination';
+@import './components/table';
 
 
 @import './layout/header.scss';
@@ -8,4 +20,3 @@
 
 @import './pages/index.scss';
 
-@import "../../node_modules/bootstrap";
