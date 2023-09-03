@@ -1,0 +1,44 @@
+// RECENT 近期活動 modal
+.modal{
+    --bs-modal-width: 636px;
+    
+}
+.modal-content{
+    border: 3px solid $primary;
+    
+    .modal-header{
+        border-bottom: 3px solid $primary;
+        padding: 16px 0;
+    
+        .modal-title{
+            width: 100%;
+            letter-spacing: 1.2px;
+            text-align: center;
+        }
+        .btn-close{
+            width: 1.5rem;
+            height: 1.5rem;
+            color: $primary;
+            opacity: 1;
+            margin: 0;
+            padding: 5px 0;
+            padding-right: 24px;
+        }
+    }
+    .modalBtn{
+        width: 184px;
+        height: 45px;
+        color: $secondary;
+        background: $primary;
+        font-size: 20px;
+        text-align: center;
+    }
+    .modalBtn:hover{
+        color: $third;
+        background: $primary;
+    }
+    .modalBtn:active{
+        color: $secondary;
+        background: $primary;
+    }
+}

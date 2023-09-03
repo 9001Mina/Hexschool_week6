@@ -2,21 +2,25 @@
 @import './utils/variables';
 @import "../../node_modules/bootstrap";
 
-@import './variables';
-@import './base/base';
+@import './utils/mixins';
 @import './utils/universal';
 
-@import './components/badges';
+@import './base/base';
+@import './base/fontStyle';
+
 @import './components/button';
 @import './components/card';
-@import './components/from';
+@import './components/carousel';
+@import './components/checkbox';
+@import './components/form';
 @import './components/pagination';
-@import './components/table';
-
+@import './components/marquee';
+@import './components/modal';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
 
-
 @import './pages/index.scss';
+
+
 

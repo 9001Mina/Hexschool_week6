@@ -5,8 +5,74 @@
     background: none;
     border-radius: 0;
 }
-.accordion-button:focus{
-    z-index: 0;
-    border: 0;
-    box-shadow: none;
+
+// 探索更多
+
+.btnBox{
+    width: 196px;
+    height: 196px;
+
+    @include mobile{
+        width: 112px;
+        height: 112px;
+        margin-bottom: 8px;
+    }
+}
+.btn-icon{
+    width: 80px;
+    margin-left: 12px;
+    padding-right: 12px;
+
+    @include mobile{
+        width: 40px;
+    }
+
+}
+.btnBox:hover{
+    background: $secondary;
+    color: $primary;
+}
+.btnBoxLast{
+    width: 196px;
+    height: 196px;
+    color: $secondary;
+    background: $primary;
+
+    @include mobile{
+        width: 112px;
+        height: 112px;
+    }
+    .textStyle{
+        font-size: $font-size-2xl;
+
+        @include mobile{
+            font-size: $font-size-lg;
+        }
+    }
+}
+.btnBoxLast:hover{ 
+    color: $primary;  
+    background: $secondary;
+}
+// 線上活動
+.btnOnline{
+    width: 100%;
+    height: auto;
+    color: #FFF;
+    background: $primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    .material-symbols-outlined{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        align-items: center;
+    }
+}
+.btnOnline:hover{
+    color: $secondary;  
+    background: $primary;
 }

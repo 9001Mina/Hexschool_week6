@@ -1,0 +1,22 @@
+@mixin pad{
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+@mixin mobile{
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+@mixin hover{
+    opacity: 0.7;
+}
+@mixin active{
+    background: $secondary;
+}
+@mixin circle{
+    width: 29px;
+    height: 29px;
+    border-radius: 999rem;
+    background-color: $secondary;
+}

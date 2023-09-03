@@ -1,0 +1,61 @@
+.inputStyle{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+}
+// 首頁-email訂閱
+.indexFormMail{
+    height: 298px;
+    border-right: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+
+    @include pad{
+        height: auto;
+        border-left: 2px solid $primary;
+    }
+    @include mobile{
+        height: auto;
+    }
+    .inputMail{
+        height: 55px;
+        background-color: transparent;
+    }
+    .indexLabel{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+
+        @include mobile{
+            justify-content: start;
+        }
+    }
+    .material-symbols-outlined{
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        font-size: 12px;
+        align-items: center;
+    }
+    button {
+        color: white;
+    }
+    button :active{
+        color: $secondary;
+    }
+}
+
+.form-control
+/* 通過驗證樣式 */
+.was-validated .form-control:valid,
+.was-validated .form-control:valid:focus {
+    border-color: $primary;
+    box-shadow: none;
+}
+/* 未通過驗證樣式 */
+.was-validated .form-control:invalid,
+.was-validated .form-control:invalid:focus {
+    background-color: transparent;
+    border-color:#c96464 !important;
+}

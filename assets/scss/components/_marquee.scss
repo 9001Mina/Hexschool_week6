@@ -1,0 +1,17 @@
+.swiper {
+    background-color: #000;
+    height: 94px;
+}
+.swiper-wrapper {
+    transition-timing-function: linear; /* 開始到結束速度一致 */
+}
+.swiper-slide {
+    height: 94px;
+    line-height: 94px;
+    font-size: 32px;
+    letter-spacing: 3.2px;
+    width: auto;
+    color: $secondary;
+    background: #000;
+    white-space: nowrap; //不要換行
+}

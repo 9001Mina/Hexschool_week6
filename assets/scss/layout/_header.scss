@@ -7,48 +7,47 @@
     justify-content: start;
     align-items: center;
 
-
-    @media (max-width: 768px) {
+    @include mobile {
         height: 40px;
         justify-content: space-between;
-
     }
-
-    img{
+    .logoLink{
+        height: 55px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }  
+    .logoLink:hover{
+        opacity: 0.7;
+    }  
+    .logo{
         width: 53px;
         height: 53px;
         margin-right: 16px;
         
-        @media (max-width: 768px) {
+        @include mobile {
             width: 40px;
             height: 40px;
             margin-right: 0;
         }
     }
-    h1{
-        display: flex;
-        
-        @media (max-width: 768px) {
-            display: none;
-        }
-    }
     .logoText{
+        display: flex;
         font-size: $h1-font-size;
         height: 55px;
         line-height: 55px;
         margin: 0;
         
-        @media (max-width: 768px) {
+        @include mobile {
             display: none;
         }
-
         span{
             font-family: $font-family-third;
             font-size: $font-size-base;
             font-weight: bold;
             margin-left: 4px;
 
-            @media (max-width: 768px) {
+            @include mobile {
                 display: none;
             }
         }
@@ -57,11 +56,11 @@
         width: 335px;
         height: 55px;
 
-        @media (max-width: 768px) {
+        @include mobile {
             width: 207px;
             height: 39px;
         }
-        input{
+        .searchBox{
             width: 284px;
             height: 55px;
             color: #878787;
@@ -69,12 +68,12 @@
             border-right: 0;
             padding: 16px 0px 16px 24px;
 
-            @media (max-width: 768px) {
+            @include mobile {
                 width: 168px;
                 height: 39px;
             }
         }
-        input:focus{
+        .searchBox:focus{
             width: 284px;
             height: 55px;
             color: #878787;
@@ -83,26 +82,25 @@
             border-bottom: 2px solid $primary;
             padding: 16px 0px 16px 24px;
 
-            @media (max-width: 768px) {
+            @include mobile {
                 width: 168px;
                 height: 39px;
             }
         }
-        button{
+        .searchBtn{
             background: $primary;
             width: 51px;
 
-            @media (max-width: 768px) {
+            @include mobile {
                 width: 39px;
                 height: 39px;
             }
-
             .searchIcon{
                 color: $secondary;
             }
         }
-        button:hover{
-            background: $gray-900;
+        .searchBtn:hover{
+            background: $gray-800;
         }
     } 
     
@@ -115,30 +113,33 @@
     display: flex;
     margin-left: auto;
 
-    ul{
+    .login{
         margin: 0;
 
-        li{
+        .loginItem{
             font-size: $font-size-sm;
         }
-    
+        .loginItem:hover{
+            color: #9C9E18;
+        }
+        .loginItem:active{
+            color: #9C9E18;
+        }
     }
     
-    @media (max-width: 992px) {
+    @include pad {
         display: none;
         
-        li{
+        .loginItem{
             display: none;
         }
-
-        
     }
-
 }
 .login-pad{
     display: none;
 
-    @media (max-width: 992px) {
+    
+    @include pad {
         display: block;
         margin-left: auto;
 
@@ -146,10 +147,9 @@
             font-size: $font-size-sm;
         }
     }
-    @media (max-width: 768px) {
+    @include mobile {
         margin-left: 0;
     }
-
     .menuShow{
         position: absolute;
         z-index: 100;
@@ -157,5 +157,13 @@
         left: 0;
         right: 0;
         background: $bg-color;
+
+        @media (max-width: 768px) {
+            top: 91px;
+        }
+
+        @media (max-width: 576px) {
+            top: 67px;
+        } 
     }
 }

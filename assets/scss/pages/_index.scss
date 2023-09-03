@@ -1,0 +1,72 @@
+// 近期活動
+.topicBlock{
+    height: 122px;
+    border: 3px solid $primary;
+
+    @include mobile{
+        height: 60px;
+        border: 2px solid $primary;
+    }
+}
+.recentStyle{
+    font-size: $h2-font-size;
+
+    @include mobile{
+        font-size: $h5-font-size;
+    }
+}
+.recentStyleCn{
+    font-size: $h1-font-size;
+
+    @include mobile{
+        font-size: $h7-font-size;
+    }
+}
+
+.onlineImg{
+    height: 317px;
+    object-fit: cover;
+    // *設定圖片要被顯示的位置
+    object-position: 25% 30%;
+
+    @include mobile{
+        height: 158px;
+    }
+}
+.onlineTitle{
+    font-size: $h1-font-size;
+}
+.checkedLabel{
+    .labelStyle{
+        font-size: $font-size-base;
+        width: 80px;
+        height: 31px;
+        line-height: 31px;
+        text-align: center;
+        border: 1px solid $primary;
+        border-left: 4px solid $primary;
+    }
+}
+.quotes{
+    border-top: 3px solid $primary;
+
+    .quotesText-xl{
+        font-size: $font-size-xl;
+        margin-top: 60px;
+        margin-bottom: 16px;
+
+        @include mobile{
+            font-size: $font-size-sm;
+            margin-top: 48px;
+            margin-bottom: 14px;
+        }
+    }
+
+    .quotesText-sm{
+        font-size: $font-size-sm;
+
+        @include mobile{
+            font-size: 14px;
+        }
+    }
+}
