@@ -26,7 +26,7 @@
 .onlineImg{
     height: 317px;
     object-fit: cover;
-    // *設定圖片要被顯示的位置
+    // 設定圖片要被顯示的位置
     object-position: 25% 30%;
 
     @include mobile{

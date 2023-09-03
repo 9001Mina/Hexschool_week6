@@ -3,7 +3,7 @@
     height: 94px;
 }
 .swiper-wrapper {
-    transition-timing-function: linear; /* 開始到結束速度一致 */
+    transition-timing-function: linear;
 }
 .swiper-slide {
     height: 94px;
@@ -13,5 +13,5 @@
     width: auto;
     color: $secondary;
     background: #000;
-    white-space: nowrap; //不要換行
+    white-space: nowrap;
 }

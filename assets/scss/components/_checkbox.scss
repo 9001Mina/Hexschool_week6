@@ -16,14 +16,11 @@
         border-left: 4px solid $black;
     }
     .tag-item:focus {
-      // 移除 Bootstrap 預設的按鈕 focus 邊框
+
         box-shadow: none;
     }
-    // 當 .tag-item 被 hover 的時候 .tag-item 加入以下樣式
     .tag-item:hover,
-     // 當 .tag-item 同層有 .active 的時候 .tag-item 加入以下樣式
     .tag-item.active,
-       // 當 .tag-checkbox 狀態是 checked 的時候，同階層的 .tag-item 加入以下樣式
     .tag-checkbox:checked + .tag-item {
         background-color: $primary;
         color: $white;

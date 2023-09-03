@@ -13,7 +13,7 @@
     .cardImg{
         width: 100%;
         height: 255px;
-        // *定位圖片正中央
+        // 定位圖片正中央
         object-fit: cover;
 
         @include mobile{
@@ -53,7 +53,7 @@
             color: $primary;
             text-decoration: underline;
         }
-        // *近期活動-開賣中hover小黃點
+        // 近期活動-開賣中hover小黃點
         .recentBuy{
             position: relative;
         }
@@ -114,7 +114,6 @@
     font-size: $font-size-xl;
     border: 2px solid $primary;
     border-left: 0;
-    // border-bottom: 0;
     text-transform: uppercase;
     
     @include pad{
